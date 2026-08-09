@@ -4,8 +4,8 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const User = require("../models/User");
 
-const EMAIL = "umairnasim26@gmail.com"; // apna asli email yahan daalo
-const NEW_PASSWORD = "Admin@1234"; // jo bhi simple password rakhna hai
+const EMAIL = "umairnasim26@gmail.com";
+const NEW_PASSWORD = "Admin@1234";
 
 async function run() {
   await mongoose.connect(process.env.MONGO_URI);
